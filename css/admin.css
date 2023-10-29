@@ -1,0 +1,109 @@
+/* Header Styles */
+header {
+    background: #800080;
+}
+
+/* Admin Wrapper Styles */
+.admin-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Sidebar Styles */
+.admin-wrapper .left-sidebar {
+    flex: 2;
+    background: #b761ce;
+}
+
+.admin-wrapper .left-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+li a {
+    color: white;
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+
+.admin-wrapper .left-sidebar ul li a {
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #b761ce;
+}
+
+.admin-wrapper .left-sidebar ul li a:hover {
+    background: #b761ce;
+}
+
+/* Admin Content Styles */
+.admin-wrapper .admin-content {
+    flex: 8;
+    height: 200%;
+    padding: 40px 200px 200px;
+    overflow-y: scroll;
+}
+
+.admin-content .page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+/* Link Styles for Edit, Delete, and Publish Actions */
+.edit {
+    color: rgb(187, 95, 195);
+    text-decoration: none;
+}
+
+.edit:hover {
+    text-decoration: underline;
+}
+
+.delete {
+    color: rgb(188, 90, 220);
+    text-decoration: none;
+}
+
+.delete:hover {
+    text-decoration: underline;
+}
+
+.publish {
+    color: rgb(197, 75, 204);
+    text-decoration: none;
+}
+
+.publish:hover {
+    text-decoration: underline;
+}
+
+/* Form Div Styles */
+form div {
+    margin-bottom: 15px;
+}
+
+/* CKEditor Styles */
+.ck-editor__editable[role="textbox"] {
+    /* Editing area */
+    min-height: 200px;
+}
+
+.ck-content .image {
+    /* Block images */
+    max-width: 80%;
+    margin: 20px auto;
+}

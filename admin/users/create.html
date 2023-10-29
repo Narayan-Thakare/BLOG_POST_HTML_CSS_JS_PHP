@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Section - Add User</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+    <!--Custom Styling-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--Admin Styling-->
+    <link rel="stylesheet" href="../../css/admin.css">
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--CKeditor-->
+    <script src="https://cdn.ckeditor.com/27.1.0/classic/ckeditor.js"></script>
+    <!--Custom Script-->
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>&nbsp;Blog</span>Website</h1>
+        </div>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span class="username">Amisha</span>
+                    <a href="logout.php">
+                        <i class="fa fa-sign-out"></i>&nbsp;&nbsp; 
+                    </a>
+                </a>                
+            </li>
+        </ul>
+  </header>
+    
+
+<!-- Admin Page Wrapper-->
+<div class="admin-wrapper">
+<!-- Left Sidebar-->
+<div class="left-sidebar">
+<ul>
+    <li><a href="../posts/index.php">Manage Posts</a></li>
+    <li><a href="index.php">Manage Users</a></li>
+    <li><a href="../topics/index.php">Manage Topics</a></li>
+</ul>
+
+</div>
+<!--//Left Sidebar-->
+<!--AAdmin Content-->
+<div class="admin-content">
+<div class="button-group">
+    <a href="create.html" class="btn btn-big">Add User</a>
+    <a href="index.php" class="btn btn-big">Manage User</a>
+</div>
+<div class="content">
+    <h2 class="page-title">Add User</h2>
+    <form action="add.php" method="post">
+        <div>
+             <label>Username</label>
+             <input type="text" name="username" class="text-input">
+       </div>
+       <div>
+             <label>Email</label>
+             <input type="text" name="email" class="text-input">
+       </div>
+       <div>
+             <label>Password</label>
+             <input type="text" name="password" class="text-input">
+       </div>
+       <div>
+             <label>Password Confirmation</label>
+             <input type="text" name="passwordConf" class="text-input">
+       </div>
+       <div>
+        <label for="topic">Role</label>
+        <select name="role" id="role" class="text-input">
+            <option value="User">User</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </div>
+        <div>
+            <button type="submit" class="btn btn-big">Add User</button>
+        </div>
+    </form>
+</div>
+
+</div> 
+<!--//Admin Content-->
+
+</div>
+<!--// Page Wrapper-->
+</div>
+</body>
+</html>

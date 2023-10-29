@@ -1,0 +1,103 @@
+/* Navbar Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/* Apply white color to all elements within the header */
+header * {
+    color: white;
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Style the logo */
+header .logo {
+    float: left;
+    height: inherit;
+}
+
+/* Style the logo text */
+header .logo-text {
+    font-family: 'candal', serif;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Style the username (remove underline) */
+header .username {
+    text-decoration: none; 
+    color: white; 
+    font-size: 16px; 
+}
+header .logo-text span {
+    color: rgb(211, 106, 223);
+}
+/* Style the username span */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b962cd; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .btn:hover {
+    background-color: #b56dc0; 
+  }
+
+  .btn.btn-big {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+  .btn.btn-big {
+    border: none;
+}
+  .text-input {
+    width: 100%;/* Adjust the width as needed */
+    font-size:20px; /* Adjust the font size as needed */
+  }
+  /* Customize the CKEditor toolbar container */
+.image-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Display the box inline with the label */
+    vertical-align: top; /* Align the box with the top of the label */
+}
+
+label {
+    display: block; /* Make the label a block element to ensure it's on a new line */
+    font-weight: bold;
+    margin-bottom: 5px; /* Add margin for spacing between the label and the box */
+}
+
+/* Optional: Style the input field inside the image box */
+.image-box input[type="file"] {
+    width: 100%;
+    /* Add more styles as needed for the input field, e.g., font, padding, etc. */
+}
+/* Style the Font Awesome icon */
+.fa-chevron-down {
+    font-size: 0.8em; /* Adjust the icon size as needed */
+    color: #ccc; /* Set the icon color to your preference */
+    margin-right: 5px; /* Add some spacing to the right of the icon */
+}
+
+/* Style the unordered list */
+ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
